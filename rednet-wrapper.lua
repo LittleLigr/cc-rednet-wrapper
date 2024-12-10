@@ -23,6 +23,15 @@ function Wrapper:client(protocol, name)
 end
 
 
+function Wrapper:tick(timeout=1)
+  local id, message = rednet.receive(Wrapper.rednet.protocol, timeout)
+  print(textutils.serialise(message))
+  if id then
+    --Wrapper.rpc_call[message]()
+  end
+end
+
+
 function call_reg_func(name, ...)
   if Wrapper.regs[name].params_count == select('#', ...) then
     local message = {}
