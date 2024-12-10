@@ -23,7 +23,7 @@ function Wrapper:client(protocol, name)
 end
 
 
-function Wrapper:tick(timeout=1)
+function Wrapper:tick(timeout)
   local id, message = rednet.receive(Wrapper.rednet.protocol, timeout)
   print(textutils.serialise(message))
   if id then

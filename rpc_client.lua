@@ -1,5 +1,5 @@
-rpc = require('rednet-wrapper')
-rpc_common = require('rpc.client')
+local rpc = require("rednet-wrapper")
+local rpc_common = require("rpc_common")
 
 local client = rpc:client("test", "server")
 

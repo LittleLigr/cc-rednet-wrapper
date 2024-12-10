@@ -1,5 +1,5 @@
-rpc = require('rednet-wrapper')
-rpc_common = require('rpc.common')
+local rpc = require("rednet-wrapper")
+local rpc_common = require("rpc_common")
 
 local host = rpc:host("test", "server")
 

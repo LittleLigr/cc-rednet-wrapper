@@ -1,4 +1,4 @@
-rpc = require('rednet-wrapper')
+local rpc = require("rednet-wrapper")
 
 function coords_func(x, y, z)
     print("My coords is: "..x..", "..y..", "..z..";")
