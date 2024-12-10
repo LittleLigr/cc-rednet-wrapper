@@ -1,3 +1,4 @@
+peripheral.find("modem", rednet.open)
 local rpc = require("rednet-wrapper")
 
 function coords_func(x, y, z)

@@ -36,7 +36,8 @@ function call_reg_func(name, ...)
   if Wrapper.regs[name].params_count == select('#', ...) then
     local message = {}
     message.rpc = {}
-    message.rpc[name] = {...}
+    message.rpc.name = name
+    message.rpc.params = {...}
     rednet.broadcast(message, Wrapper.rednet.protocol)
   end 
 end
