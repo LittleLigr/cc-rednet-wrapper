@@ -1,4 +1,3 @@
-peripheral.find("modem", rednet.open)
 local rpc = require("rednet-wrapper")
 local rpc_common = require("rpc_common")
 
