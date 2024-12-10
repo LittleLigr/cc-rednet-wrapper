@@ -28,6 +28,8 @@ function Wrapper:tick(timeout)
   print(textutils.serialise(message))
   if id then
     --Wrapper.rpc_call[message]()
+    --print(message.rpc.name)
+    Wrapper.regs[message.rpc.name].call(unpack(message.rpc.params))
   end
 end
 
