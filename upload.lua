@@ -9,4 +9,4 @@ shell.execute("wget", "https://raw.githubusercontent.com/LittleLigr/cc-rednet-wr
 shell.execute("wget", "https://raw.githubusercontent.com/LittleLigr/cc-rednet-wrapper/refs/heads/main/rpc_host.lua")
 shell.execute("wget", "https://raw.githubusercontent.com/LittleLigr/cc-rednet-wrapper/refs/heads/main/rpc_client.lua")
 shell.execute("wget", "https://raw.githubusercontent.com/LittleLigr/cc-rednet-wrapper/refs/heads/main/rpc_gui_host.lua")
-shell.execute("wget", "run", "https://pinestore.cc/d/15"")
+shell.execute("wget", "run", "https://pinestore.cc/d/15")
